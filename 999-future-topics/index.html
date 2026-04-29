@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../001-variables/">
       
-      
-        <link rel="next" href="../001-variables/">
       
       
         
@@ -23,7 +21,7 @@
     
     
       
-        <title>Why Java? - Introduction to Java</title>
+        <title>999 future topics - Introduction to Java</title>
       
     
     
@@ -63,11 +61,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#why-java" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -100,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Why Java?
+              999 future topics
             
           </span>
         </div>
@@ -220,37 +213,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Why Java?
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../000-intro/" class="md-nav__link">
         
   
   
@@ -266,48 +232,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-does-the-virtual-machine-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How does the Virtual Machine Work?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lets-try-it-out" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Let's try it out
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -343,10 +267,17 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../999-future-topics/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -362,6 +293,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -383,38 +315,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-does-the-virtual-machine-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How does the Virtual Machine Work?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lets-try-it-out" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Let's try it out
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -431,36 +331,13 @@
 
 
 
-<h1 id="why-java">Why Java?</h1>
-<p>Java is a popular programming language for a lot of different uses.  In this introduction, we are going to cover the basics of Java syntax so that you can explore different applications.  </p>
-<p>Java was introduced with the idea of Write-Once-Run-Anywhere.  In some languages, e.g. C++, you have to compile your source code on every type of machine that needs to run it.  You might need to compile one for Windows, another for Mac, and a third to run on Linux desktops.  Java let's you do this once through the use of <em>virtual machines</em>.</p>
-<h2 id="how-does-the-virtual-machine-work">How does the Virtual Machine Work?</h2>
-<p><img alt="Source Code to Virtual Machine" src="../images/java-source-to-virtual-machine.png" /></p>
-<h2 id="lets-try-it-out">Let's try it out</h2>
-<p>Every Java program has a <em>main</em> method.  The virtual machine, sometimes abbreviated JVM, for Java Virtual Machine, looks for this method when we tell it to run the program. </p>
-<p>Take a look at this example and let's walk through all of the parts.</p>
-<pre><code class="language-Java">public class MyFirstClass {
-    public static void main(String[] args) {
-        System.out.print(&quot;I rule!&quot;);
-    }
-}
-</code></pre>
-<p>Click <a href="https://www.online-java.com/GPAz5tavhG">here</a> to see it in your browser.</p>
-<p>Let's walk through all of the parts.</p>
-<p>public - everyone can access it</p>
-<p>class - let's us know we are <em>declaring</em> a class</p>
-<p>MyFirstClass - The name of the class.  It is recommended that names of classes start with an upper case letter, and each word in the name has an upper case letter. </p>
-<p>{ } - The brackets define the start and end of a block of code.<br />
-In this case, it is the start and end of the class.</p>
-<p>static - This is a keyword we will discuss later.  For now, know that you need it for your main method.  </p>
-<p>void - this method doesn't return anything.  We indicate that with the use of <em>void</em>.  </p>
-<p>main - this is the name of the method.  A method is a function that belongs to a class. </p>
-<p>() - in a method declaration, the arguments parameters of the method go in parentheses.</p>
-<p>String[] - this tells us the type of the method parameter.  In this case, an array of strings.  An array is similar to a list.  We will cover it in more detail later.</p>
-<p>args - the name of the parameter for main.  args is short for arguments.  This allows us to pass in values when we run the java program. </p>
-<p>System.out.print - print is a function in the System.out package.  We often use print, and similar functions to output data to the terminal.  </p>
-<p>("I rule") - we are passing the string "I rule" as a parameter to the System.out.print function.  This is what we expect to be placed on the screen.</p>
-<p>; - Java statements end with a semicolon.</p>
+  <h1>999 future topics</h1>
+
+<p>Topics to be covered</p>
+<ul>
+<li>final and Constants</li>
+<li>Boolean Logic</li>
+</ul>
 
 
 
