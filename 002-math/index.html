@@ -9,23 +9,25 @@
       
       
       
+        <link rel="prev" href="../001-variables/">
       
-        <link rel="next" href="000-intro/">
+      
+        <link rel="next" href="../999-future-topics/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Introduction to Java</title>
+        <title>Math and Operators - Introduction to Java</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -44,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#references" class="md-skip">
+        <a href="#math-and-operators" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Introduction to Java" class="md-header__button md-logo" aria-label="Introduction to Java" data-md-component="logo">
+    <a href=".." title="Introduction to Java" class="md-header__button md-logo" aria-label="Introduction to Java" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Math and Operators
             
           </span>
         </div>
@@ -176,7 +178,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Introduction to Java" class="md-nav__button md-logo" aria-label="Introduction to Java" data-md-component="logo">
+    <a href=".." title="Introduction to Java" class="md-nav__button md-logo" aria-label="Introduction to Java" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -191,19 +193,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -219,7 +212,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -231,7 +223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="000-intro/" class="md-nav__link">
+      <a href="../000-intro/" class="md-nav__link">
         
   
   
@@ -258,7 +250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="001-variables/" class="md-nav__link">
+      <a href="../001-variables/" class="md-nav__link">
         
   
   
@@ -282,10 +274,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="002-math/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Math and Operators
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -301,6 +320,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arithmetic-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arithmetic Operators
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increment-and-decrement-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Increment and Decrement Operators
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-sharing-cookies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise - Sharing cookies
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -312,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="999-future-topics/" class="md-nav__link">
+      <a href="../999-future-topics/" class="md-nav__link">
         
   
   
@@ -352,6 +424,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arithmetic-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arithmetic Operators
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increment-and-decrement-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Increment and Decrement Operators
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-sharing-cookies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise - Sharing cookies
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -367,10 +480,101 @@
 
 
 
-<p>Welcome to this introduction.</p>
-<p>To begin learning about Java, start with <a href="000-intro/">Why Java?</a>.</p>
-<h1 id="references">References</h1>
-<p><a href="https://a.co/d/0iKg6oys">Head First Java, A Learner's Guide to Real-World Programming, 3rd Edition</a></p>
+<h1 id="math-and-operators">Math and Operators</h1>
+<p>As you might expect, Java provides a lot of ways to perform calculations.  Let's start with common Arithmetic (math) operators. </p>
+<h2 id="arithmetic-operators">Arithmetic Operators</h2>
+<table>
+<thead>
+<tr>
+<th>operation</th>
+<th>operator</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>add</td>
+<td>+</td>
+<td>int sum = 100 + 50; // 150</td>
+</tr>
+<tr>
+<td>subtract</td>
+<td>-</td>
+<td>int difference = 100 - 50; // 50</td>
+</tr>
+<tr>
+<td>multiply</td>
+<td>*</td>
+<td>int product = 100 * 50; // 5000</td>
+</tr>
+<tr>
+<td>division</td>
+<td>/</td>
+<td>int quotient = 100 / 50; // 2</td>
+</tr>
+<tr>
+<td>modulus</td>
+<td>%</td>
+<td>int remainder = 3 % 2; // 1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="increment-and-decrement-operators">Increment and Decrement Operators</h2>
+<p>It is very common to increase an integer value by 1, or to decrease an integer value by 1.  It is so common, that there are shortcuts.</p>
+<table>
+<thead>
+<tr>
+<th>operation</th>
+<th>operator</th>
+<th>example</th>
+<th>long format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>increment</td>
+<td>++</td>
+<td>++x</td>
+<td>x = x + 1</td>
+</tr>
+<tr>
+<td>decrement</td>
+<td>--</td>
+<td>--x</td>
+<td>x = x - 1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercise-sharing-cookies">Exercise - Sharing cookies</h2>
+<p>Let's put this to work in an example.  </p>
+<p>In this example, you will fill in some missing code. We want to keep track of the number of friends that we have in the room.  We start with 2.  Three friends enter and one leaves. </p>
+<p>Then, we want to divide up the cookies.  They may not divide evenly, so there may be some cookies left over.  </p>
+<pre><code class="language-java">public class Main {
+  public static void main(String[] args) {
+
+    int numCookies = 24;
+    int numFriends = 2;
+
+    System.out.println(&quot;Friends in the room - &quot; + numFriends);
+
+    // write code to show that 3 friends entered the room
+
+
+    // write code to show that 1 friend left the room
+
+    System.out.println(&quot;Final number of friends - &quot; + numFriends);
+
+    // Calculate the number of cookies per person in the room
+    // Add the resulting variable to the print statement below
+    System.out.println(&quot;Number of cookies per friend - &quot;);
+
+    // Calculate the number of cookies remaining 
+    // Add the resulting variable to the print statement below
+    System.out.println(&quot;Number of cookies remaining - &quot; );
+  }
+}
+</code></pre>
+<p><a href="https://www.online-java.com/f6glVCmtRj">Exercise</a></p>
 
 
 
@@ -420,10 +624,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
