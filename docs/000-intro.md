@@ -52,3 +52,30 @@ System.out.print - print is a function in the System.out package.  We often use 
 ("I rule") - we are passing the string "I rule" as a parameter to the System.out.print function.  This is what we expect to be placed on the screen.
 
 ; - Java statements end with a semicolon.
+
+## Comments
+
+There are two types of comments in Java.  
+
+Single line comments start with `//` and go to the end of the line.
+
+```java
+// This is a comment
+
+System.out.print("I rule!"); // This is a comment after a statement
+```
+
+You may also see *block comments*.  These start with `/*` and end with `*/`.
+
+```java
+/* Block comments can extend over 
+multiple lines.  They are useful for
+longer explanations.  Nothing in the blocks will 
+be executed.  Not even this. 
+
+System.out.print("I rule!");
+
+But that allows you to put examples in your comments. 
+The next line will execute. */
+System.out.print("I rule!");
+```
