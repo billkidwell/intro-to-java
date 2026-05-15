@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../002-math/">
+        <link rel="prev" href="../004-logical-operators/">
       
       
-        <link rel="next" href="../004-logical-operators/">
+        <link rel="next" href="../999-future-topics/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Comparison - Introduction to Java</title>
+        <title>Conditional flow - Introduction to Java</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#comparison" class="md-skip">
+        <a href="#conditional-flow" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Comparison
+              Conditional flow
             
           </span>
         </div>
@@ -301,37 +301,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Comparison
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../003-comparison/" class="md-nav__link">
         
   
   
@@ -347,59 +320,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#equal" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Equal ==
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#additional-comparison-operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Additional comparison operators
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercise-the-roller-coaster-gate" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercise: The Roller Coaster Gate
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -435,10 +355,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../005-conditional-flow/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conditional flow
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -454,6 +401,98 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        if
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="if">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beware-the-missing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beware the missing { }
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        if ... else
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-else-if-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        if ... else if ... else ...
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nested if ...
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -512,10 +551,38 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#equal" class="md-nav__link">
+  <a href="#if" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Equal ==
+        if
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="if">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beware-the-missing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beware the missing { }
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        if ... else
       
     </span>
   </a>
@@ -523,10 +590,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#additional-comparison-operators" class="md-nav__link">
+  <a href="#if-else-if-else" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Additional comparison operators
+        if ... else if ... else ...
       
     </span>
   </a>
@@ -534,10 +601,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercise-the-roller-coaster-gate" class="md-nav__link">
+  <a href="#nested-if" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exercise: The Roller Coaster Gate
+        Nested if ...
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
       
     </span>
   </a>
@@ -561,97 +639,161 @@
 
 
 
-<h1 id="comparison">Comparison</h1>
-<p>When you have variables with different values, you often need to compare them to decide what your program should do. </p>
-<p>In this section we talk about comparison operators.  These result in a value of true or false. </p>
-<h2 id="equal">Equal ==</h2>
-<p>One tricky thing to remember is that when comparing two values, you use ==, when assigning a value, you use =;</p>
-<pre><code class="language-java">int x = 5;
-System.out.println(x == 5); // returns true
+<h1 id="conditional-flow">Conditional flow</h1>
+<p>When we talk about the flow of a program, we are talking about which parts of the code run, and which parts are skipped.  In this section, let's learn a few different ways we can control the flow of a program.  We have already used some of these in prior exercises.</p>
+<h2 id="if">if</h2>
+<p>An if statement specifies a <strong>block of code</strong> that should be executed if a condition is true.</p>
+<pre><code class="language-java">if (condition) {
+    // block of code to be executed if the condition is true
+}
 </code></pre>
-<h2 id="additional-comparison-operators">Additional comparison operators</h2>
-<p>This table provides more examples of comparison operators that you may need.</p>
+<p>We can use boolean variables and comparison operators to make this very readable.</p>
+<pre><code class="language-java">int height = 72; 
+boolean isTallEnough = height &gt; 48;
+
+if (isTallEnough) {
+    System.out.println(&quot;Enjoy the ride&quot;);
+}
+</code></pre>
+<h3 id="beware-the-missing">Beware the missing { }</h3>
+<p>Our curly brackets define the block of code associated with our <code>if</code> statement.  If you leave them off, the block of code the next statement.</p>
+<pre><code class="language-java">int height = 72; 
+boolean isTallEnough = height &gt; 48;
+
+if (isTallEnough) 
+    System.out.println(&quot;Enjoy the ride&quot;);
+</code></pre>
+<p>This works the same way as the example above.  However, it is best to use the curly brackets.  There is a common mistake in this code... can you find it?</p>
+<pre><code class="language-java">int height = 40; 
+boolean isTallEnough = height &gt; 48;
+
+if (isTallEnough) 
+    System.out.println(&quot;Buckle your seatbelt.&quot;);
+    System.out.println(&quot;Enjoy the ride!&quot;);
+</code></pre>
+<p>Try this code and see if you can spot the error.</p>
+<p><a href="https://www.online-java.com/PcS1QtpOSe">Enjoy the ride</a></p>
+<h2 id="if-else">if ... else</h2>
+<p>Often, we also need to do something if the condition is not true.  To do this, we can use the if ... else ... structure.</p>
+<pre><code class="language-java">if (condition) {
+    // block of code to be executed if the condition is true
+} else {
+    // block of code to be executed if the condition is false
+}
+</code></pre>
+<p>Let's revisit our example that looked at heights. We can use the if ... else ... to take an action based on whether a person is tall enough for our carnival ride.</p>
+<pre><code class="language-java">int height = 72; 
+boolean isTallEnough = height &gt; 48;
+
+if (isTallEnough) {
+    System.out.println(&quot;You are tall enough to ride!&quot;);
+} else {
+    System.out.println(&quot;Sorry, you are too short for this ride.&quot;);
+}
+</code></pre>
+<h2 id="if-else-if-else">if ... else if ... else ...</h2>
+<p>We don't have to stop there, though.  We can evaluate multiple conditions. </p>
+<pre><code class="language-java">if (condition) {
+    // block of code to be executed if the condition is true
+} else if (anotherCondition) {
+    // block of code to be executed if the condition is false 
+    // and anotherCondition is true
+} else {
+    // block of code to be executed if the condition is false
+    // and anotherCondition if false
+}
+</code></pre>
+<p>Notice here, first we check <code>condition</code>.  If it is true, we don't even check <code>anotherCondition</code>.  We know what to do.  If it is false, then we continue, and we evaluate <code>anotherCondition</code>. </p>
+<pre><code class="language-java">int height = 72; 
+
+if (height &gt; 72) {
+    System.out.println(&quot;You are a giant!&quot;);
+} else if (height &gt; 48) {
+    System.out.println(&quot;You are tall enough to ride!&quot;);
+} else {
+    System.out.println(&quot;Sorry, you are too short for this ride.&quot;);
+}
+</code></pre>
+<p>Let's evaluate this for different values of height.  Can you fill in the other values?</p>
 <table>
 <thead>
 <tr>
-<th>operator</th>
-<th>description</th>
-<th>example</th>
+<th>height</th>
+<th>output</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>==</td>
-<td>Equal to</td>
-<td>x == 5</td>
+<td>74</td>
+<td>You are a giant!</td>
 </tr>
 <tr>
-<td>!=</td>
-<td>Not equal</td>
-<td>x != 5</td>
+<td>72</td>
+<td></td>
 </tr>
 <tr>
-<td>&gt;</td>
-<td>Greater than</td>
-<td>x &gt; 5</td>
+<td>50</td>
+<td></td>
 </tr>
 <tr>
-<td>&lt;</td>
-<td>Less than</td>
-<td>x &lt; 5</td>
+<td>48</td>
+<td></td>
 </tr>
 <tr>
-<td>&gt;=</td>
-<td>Greater than or equal to</td>
-<td>x &gt;= 5</td>
-</tr>
-<tr>
-<td>&lt;=</td>
-<td>Less than or equal to</td>
-<td>x &lt;= 5</td>
+<td>47</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<p>We will see later that ! is used for NOT. That should help us remember !=.  I still remember greater than and less than operators based on the fact that the opening is toward the larger number, like the jaws of an alligator gobbling up the larger number. </p>
-<p>&gt;= and &lt;= are shortcuts.  It is very common that you want to know if something is equal to a boundary, or greater than that boundary.  These operators prevent us from typing both conditions. </p>
-<p>As an example, someone is considered a legal adult if they are 18 years of age, or older.</p>
-<pre><code class="language-java">boolean isAdult = age &gt;= 18;
-</code></pre>
-<h2 id="exercise-the-roller-coaster-gate">Exercise: The Roller Coaster Gate</h2>
-<p>Imagine you are building a digital gate for a theme park ride called The Dragon Helper. The ride has height rules to keep everyone safe.</p>
-<p>Your Tasks
-* Fill in the correct equations to determine if the rider is tall enough. 
-* Test the program with these values for height:
-    * Try 40, 48, 50, 72 and 73</p>
-<p>The program does the following
-* If height is 48 or taller, it prints: "You are tall enough to ride!"
-* If height is less than 48, it prints: "Sorry, you are too short for this ride."
-* A special bonus check inside prints: "Wow, you are a giant! Sit in the front row." if the rider is exactly 72 inches.</p>
-<p><a href="https://www.online-java.com/3HWv2EtKBE">Try it Now</a></p>
-<pre><code class="language-java">public class Main {
-    public static void main(String[] args) {
-        int height = 50; // Try 40, 48, 72 and 73!
+<h2 id="nested-if">Nested if ...</h2>
+<p>What if we wanted to print "You are a giant! You are tall enough to ride!" in the case where the user was over 72 inches?  We can put if statements inside of if statements.  This is called a <strong>nested</strong> if statement.</p>
+<pre><code class="language-java">int height = 72; 
 
-        // replace the values here with the correct conditions
-        // For example `boolean aboveFreezing = temperature &gt; 32; ``
-        boolean tallEnough = false;
-        boolean isGiant = false;
-
-        // You should not need to change anything below this line
-
-        if (tallEnough) {
-            if (isGiant) {
-                System.out.println(&quot;Wow, you are a giant! Sit in the front row.&quot;);
-            } else {
-                System.out.println(&quot;You are tall enough to ride!&quot;);
-            }
-        } else {
-            System.out.println(&quot;Sorry, you are too short for this ride.&quot;);
-        }
+if (height &gt; 48) {
+    if (height &gt; 72) {
+        System.out.print(&quot;You are a giant! &quot;);
     }
+    System.out.println(&quot;You are tall enough to ride!&quot;);
+} else {
+    System.out.println(&quot;Sorry, you are too short for this ride.&quot;);
 }
-
 </code></pre>
+<p>With this code, If <code>height</code> is greater than 48, the computer will move to line 98 and evaluate that if statement.  If <code>height</code> is greater than 72, it will execute the block that prints "You are a giant! ".  Either way, it will execute the line 101 and output "You are tall enought to ride!".</p>
+<h2 id="exercise">Exercise</h2>
+<p>Let's write a Grade Calculator.  Scores are often a percentage (0 - 100) and there is a grade table that translates the numeric score to a grade letter.  </p>
+<p>Here is a table that is often used:</p>
+<table>
+<thead>
+<tr>
+<th>Percentage Score</th>
+<th>Letter Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>90 - 100</td>
+<td>A</td>
+</tr>
+<tr>
+<td>80 - 89</td>
+<td>B</td>
+</tr>
+<tr>
+<td>70 - 79</td>
+<td>C</td>
+</tr>
+<tr>
+<td>60 - 69</td>
+<td>D</td>
+</tr>
+<tr>
+<td>0 - 59</td>
+<td>F</td>
+</tr>
+</tbody>
+</table>
+<p>Let's write a grade calculator that will output the correct letter grade. </p>
+<p><a href="https://www.online-java.com/u0Yim6op1I">Grade Calculator</a></p>
 
 
 
