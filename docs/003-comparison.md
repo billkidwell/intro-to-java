@@ -43,7 +43,8 @@ Your Tasks
 * Test the program with these values for height:
     * Try 40, 48, 50, 72 and 73
 
-The program does the following
+The program does the following:
+
 * If height is 48 or taller, it prints: "You are tall enough to ride!"
 * If height is less than 48, it prints: "Sorry, you are too short for this ride."
 * A special bonus check inside prints: "Wow, you are a giant! Sit in the front row." if the rider is exactly 72 inches.
