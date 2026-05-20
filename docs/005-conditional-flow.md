@@ -147,3 +147,184 @@ Here is a table that is often used:
 Let's write a grade calculator that will output the correct letter grade. 
 
 [Grade Calculator](https://www.online-java.com/u0Yim6op1I)
+
+
+## Switch statement
+
+Sometimes we need to compare a variable against several values.  For example, let's suppose we needed to translate a number that is the day of the week into the text to describe the day.  
+
+```java
+
+int dayNumber = 6;
+String day;
+
+if (day == 1 ) {
+    day = "Monday";
+} else if (day == 2) {
+    day = "Tuesday";
+} else if (day == 3) {
+    day = "Wednesday";
+} else if (day == 4) {
+    day = "Thursday";
+} else if (day == 5) {
+    day = "Friday";
+} else if (day == 6) {
+    day = "Saturday";
+} else if (day == 7) {
+    day = "Sunday";
+}
+} else {
+    day = "Unknown day of week";
+}
+
+// Day 6 is Saturday
+System.out.println("Day " + dayNumber + " is " + day);
+
+```
+
+The switch statement can make this easier to read, and less error prone.
+
+```java
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+```
+
+For our example, it would look like this:
+
+```java
+int dayNumber = 6;
+String day;
+
+switch( dayNumber ) {
+    case 1: day = "Monday";
+        break;
+    case 2: day = "Tuesday";
+        break;
+    case 3: day = "Wednesday";
+        break;
+    case 4: day = "Thursday";
+        break;
+    case 5: day = "Friday";
+        break;
+    case 6: day = "Saturday";
+        break;
+    case 7: day = "Sunday";
+        break;
+    default:
+        day = "Unknown day of week";
+}
+
+// Day 6 is Saturday
+System.out.println("Day " + dayNumber + " is " + day);
+```
+
+This is a simpler.  It allows us to run any code we want in the block for each value.
+
+### Use of break statements and fall through
+
+What if we want to do something different for a range of values?
+
+This example will fall through each case, 1, 2, 3, 4, and 5 until it hits the break statement.  So for any of those values, it will print "Weekday".  For either 6 or 7, it will print "Weekend", and if the number is out of range it prints "Unknown day of week".
+
+```java
+int dayNumber = 1;
+String day;
+
+switch( dayNumber ) {
+    case 1: 
+    case 2: 
+    case 3: 
+    case 4: 
+    case 5: 
+        System.out.println("Weekday");
+        break;
+    case 6: day = "Saturday";
+    case 7: day = "Sunday";
+        System.out.println("Weekend");
+        break;
+    default:
+        System.out.println("Unknown day of week");
+}
+```
+
+### Use of switch with enum
+
+Enum is short for "enumeration".  This means to number something.  For example, above we were assigning values to the day of the week.  
+
+We can create an enum for the Days of the week as follows:
+
+```java
+    enum DayOfWeek { Mon, Tues, Wed, Thu, Fri, Sat, Sun };
+```
+
+Now we can use these like variables.  
+
+```java
+    enum DayOfWeek { Mon, Tue, Wed, Thu, Fri, Sat, Sun };
+    DayOfWeek today = DayOfWeek.Wed;
+    String day;
+    
+    day = switch (today) {
+        case Mon -> "Monday";
+        case Tue -> "Tuesday";
+        case Wed -> "Wednesday";
+        case Thu -> "Thursday";
+        case Fri -> "Friday";
+        case Sat -> "Saturday";
+        case Sun -> "Sunday";                
+    };
+    
+    System.out.println("Day " + day + " is " + day);
+```
+
+This is useful for a few reasons.  First, `today` can only be one of the values we have defined for the enum `DayOfWeek`.  We don't have to worry what a zero or an 8 means, because those values aren't legal.  Our code won't run if we try to set it to something else. In addition, this is a lot easier to read and understand.  
+
+### Exercise  
+ 
+Let's practice using enums and switch statements. 
+
+ (Day of Week exercise)[https://www.online-java.com/CBL3OdVI6l]
+
+ ```java
+ public class Main {
+    public static void main(String[] args) {
+        
+        /**
+         * Change this example so that `today` is an instance of 
+         * the enum `DayOfWeek`.  Update the switch statement to 
+         * work with the enum values instead of the numbers 1-7. 
+         */
+        
+        enum DayOfWeek { Mon, Tue, Wed, Thu, Fri, Sat, Sun };
+        int today = 1;
+        String day;
+        
+        System.out.print("Today is a ");
+        
+        switch( today ) {
+            case 1: 
+            case 2: 
+            case 3: 
+            case 4: 
+            case 5: 
+                System.out.println("Weekday");
+                break;
+            case 6: day = "Saturday";
+            case 7: day = "Sunday";
+                System.out.println("Weekend");
+                break;
+            default:
+                System.out.println("Unknown day of week");
+        }
+
+    }
+}
+ ```

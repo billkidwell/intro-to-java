@@ -39,6 +39,7 @@ boolean isAdult = age >= 18;
 Imagine you are building a digital gate for a theme park ride called The Dragon Helper. The ride has height rules to keep everyone safe.
 
 Your Tasks
+
 * Fill in the correct equations to determine if the rider is tall enough. 
 * Test the program with these values for height:
     * Try 40, 48, 50, 72 and 73
