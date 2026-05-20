@@ -489,6 +489,56 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#switch-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switch statement
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Switch statement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-of-break-statements-and-fall-through" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use of break statements and fall through
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-of-switch-with-enum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use of switch with enum
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -619,6 +669,56 @@
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switch statement
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Switch statement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-of-break-statements-and-fall-through" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use of break statements and fall through
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-of-switch-with-enum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use of switch with enum
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -794,6 +894,157 @@ if (height &gt; 48) {
 </table>
 <p>Let's write a grade calculator that will output the correct letter grade. </p>
 <p><a href="https://www.online-java.com/u0Yim6op1I">Grade Calculator</a></p>
+<h2 id="switch-statement">Switch statement</h2>
+<p>Sometimes we need to compare a variable against several values.  For example, let's suppose we needed to translate a number that is the day of the week into the text to describe the day.  </p>
+<pre><code class="language-java">
+int dayNumber = 6;
+String day;
+
+if (day == 1 ) {
+    day = &quot;Monday&quot;;
+} else if (day == 2) {
+    day = &quot;Tuesday&quot;;
+} else if (day == 3) {
+    day = &quot;Wednesday&quot;;
+} else if (day == 4) {
+    day = &quot;Thursday&quot;;
+} else if (day == 5) {
+    day = &quot;Friday&quot;;
+} else if (day == 6) {
+    day = &quot;Saturday&quot;;
+} else if (day == 7) {
+    day = &quot;Sunday&quot;;
+}
+} else {
+    day = &quot;Unknown day of week&quot;;
+}
+
+// Day 6 is Saturday
+System.out.println(&quot;Day &quot; + dayNumber + &quot; is &quot; + day);
+
+</code></pre>
+<p>The switch statement can make this easier to read, and less error prone.</p>
+<pre><code class="language-java">switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+</code></pre>
+<p>For our example, it would look like this:</p>
+<pre><code class="language-java">int dayNumber = 6;
+String day;
+
+switch( dayNumber ) {
+    case 1: day = &quot;Monday&quot;;
+        break;
+    case 2: day = &quot;Tuesday&quot;;
+        break;
+    case 3: day = &quot;Wednesday&quot;;
+        break;
+    case 4: day = &quot;Thursday&quot;;
+        break;
+    case 5: day = &quot;Friday&quot;;
+        break;
+    case 6: day = &quot;Saturday&quot;;
+        break;
+    case 7: day = &quot;Sunday&quot;;
+        break;
+    default:
+        day = &quot;Unknown day of week&quot;;
+}
+
+// Day 6 is Saturday
+System.out.println(&quot;Day &quot; + dayNumber + &quot; is &quot; + day);
+</code></pre>
+<p>This is a simpler.  It allows us to run any code we want in the block for each value.</p>
+<h3 id="use-of-break-statements-and-fall-through">Use of break statements and fall through</h3>
+<p>What if we want to do something different for a range of values?</p>
+<p>This example will fall through each case, 1, 2, 3, 4, and 5 until it hits the break statement.  So for any of those values, it will print "Weekday".  For either 6 or 7, it will print "Weekend", and if the number is out of range it prints "Unknown day of week".</p>
+<pre><code class="language-java">int dayNumber = 1;
+String day;
+
+switch( dayNumber ) {
+    case 1: 
+    case 2: 
+    case 3: 
+    case 4: 
+    case 5: 
+        System.out.println(&quot;Weekday&quot;);
+        break;
+    case 6: day = &quot;Saturday&quot;;
+    case 7: day = &quot;Sunday&quot;;
+        System.out.println(&quot;Weekend&quot;);
+        break;
+    default:
+        System.out.println(&quot;Unknown day of week&quot;);
+}
+</code></pre>
+<h3 id="use-of-switch-with-enum">Use of switch with enum</h3>
+<p>Enum is short for "enumeration".  This means to number something.  For example, above we were assigning values to the day of the week.  </p>
+<p>We can create an enum for the Days of the week as follows:</p>
+<pre><code class="language-java">    enum DayOfWeek { Mon, Tues, Wed, Thu, Fri, Sat, Sun };
+</code></pre>
+<p>Now we can use these like variables.  </p>
+<pre><code class="language-java">    enum DayOfWeek { Mon, Tue, Wed, Thu, Fri, Sat, Sun };
+    DayOfWeek today = DayOfWeek.Wed;
+    String day;
+
+    day = switch (today) {
+        case Mon -&gt; &quot;Monday&quot;;
+        case Tue -&gt; &quot;Tuesday&quot;;
+        case Wed -&gt; &quot;Wednesday&quot;;
+        case Thu -&gt; &quot;Thursday&quot;;
+        case Fri -&gt; &quot;Friday&quot;;
+        case Sat -&gt; &quot;Saturday&quot;;
+        case Sun -&gt; &quot;Sunday&quot;;                
+    };
+
+    System.out.println(&quot;Day &quot; + day + &quot; is &quot; + day);
+</code></pre>
+<p>This is useful for a few reasons.  First, <code>today</code> can only be one of the values we have defined for the enum <code>DayOfWeek</code>.  We don't have to worry what a zero or an 8 means, because those values aren't legal.  Our code won't run if we try to set it to something else. In addition, this is a lot easier to read and understand.  </p>
+<h3 id="exercise_1">Exercise</h3>
+<p>Let's practice using enums and switch statements. </p>
+<p>(Day of Week exercise)[https://www.online-java.com/CBL3OdVI6l]</p>
+<p>```java
+ public class Main {
+    public static void main(String[] args) {</p>
+<pre><code>    /**
+     * Change this example so that `today` is an instance of 
+     * the enum `DayOfWeek`.  Update the switch statement to 
+     * work with the enum values instead of the numbers 1-7. 
+     */
+
+    enum DayOfWeek { Mon, Tue, Wed, Thu, Fri, Sat, Sun };
+    int today = 1;
+    String day;
+
+    System.out.print("Today is a ");
+
+    switch( today ) {
+        case 1: 
+        case 2: 
+        case 3: 
+        case 4: 
+        case 5: 
+            System.out.println("Weekday");
+            break;
+        case 6: day = "Saturday";
+        case 7: day = "Sunday";
+            System.out.println("Weekend");
+            break;
+        default:
+            System.out.println("Unknown day of week");
+    }
+
+}
+</code></pre>
+<p>}
+ ```</p>
 
 
 
