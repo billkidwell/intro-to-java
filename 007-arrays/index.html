@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../002-math/">
+        <link rel="prev" href="../006-while-loops/">
       
       
-        <link rel="next" href="../004-logical-operators/">
+        <link rel="next" href="../999-future-topics/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Comparison - Introduction to Java</title>
+        <title>Arrays - Introduction to Java</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#comparison" class="md-skip">
+        <a href="#arrays" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Comparison
+              Arrays
             
           </span>
         </div>
@@ -301,37 +301,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Comparison
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../003-comparison/" class="md-nav__link">
         
   
   
@@ -347,59 +320,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#equal" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Equal ==
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#additional-comparison-operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Additional comparison operators
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercise-the-roller-coaster-gate" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercise: The Roller Coaster Gate
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -489,10 +409,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../007-arrays/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arrays
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -508,6 +455,65 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-the-elements-of-an-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accessing the elements of an array
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-the-size-of-an-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting the size of an array
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting the size of an array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -566,10 +572,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#equal" class="md-nav__link">
+  <a href="#accessing-the-elements-of-an-array" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Equal ==
+        Accessing the elements of an array
       
     </span>
   </a>
@@ -577,24 +583,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#additional-comparison-operators" class="md-nav__link">
+  <a href="#getting-the-size-of-an-array" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Additional comparison operators
+        Getting the size of an array
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting the size of an array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#exercise-the-roller-coaster-gate" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercise: The Roller Coaster Gate
-      
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -615,103 +627,32 @@
 
 
 
-<h1 id="comparison">Comparison</h1>
-<p>When you have variables with different values, you often need to compare them to decide what your program should do. </p>
-<p>In this section we talk about comparison operators.  These result in a value of true or false. </p>
-<h2 id="equal">Equal ==</h2>
-<p>One tricky thing to remember is that when comparing two values, you use ==, when assigning a value, you use =;</p>
-<pre><code class="language-java">int x = 5;
-System.out.println(x == 5); // returns true
+<h1 id="arrays">Arrays</h1>
+<p>In Java, an array is a way to store multiple values, like a list.</p>
+<p>You declare an array by defining a variable type with square brackets [ ]</p>
+<pre><code class="language-java">String[] cars; // declare an array of String values called `cars`
 </code></pre>
-<h2 id="additional-comparison-operators">Additional comparison operators</h2>
-<p>This table provides more examples of comparison operators that you may need.</p>
-<table>
-<thead>
-<tr>
-<th>operator</th>
-<th>description</th>
-<th>example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>==</td>
-<td>Equal to</td>
-<td>x == 5</td>
-</tr>
-<tr>
-<td>!=</td>
-<td>Not equal</td>
-<td>x != 5</td>
-</tr>
-<tr>
-<td>&gt;</td>
-<td>Greater than</td>
-<td>x &gt; 5</td>
-</tr>
-<tr>
-<td>&lt;</td>
-<td>Less than</td>
-<td>x &lt; 5</td>
-</tr>
-<tr>
-<td>&gt;=</td>
-<td>Greater than or equal to</td>
-<td>x &gt;= 5</td>
-</tr>
-<tr>
-<td>&lt;=</td>
-<td>Less than or equal to</td>
-<td>x &lt;= 5</td>
-</tr>
-</tbody>
-</table>
-<p>We will see later that ! is used for NOT. That should help us remember !=.  I still remember greater than and less than operators based on the fact that the opening is toward the larger number, like the jaws of an alligator gobbling up the larger number. </p>
-<p>&gt;= and &lt;= are shortcuts.  It is very common that you want to know if something is equal to a boundary, or greater than that boundary.  These operators prevent us from typing both conditions. </p>
-<p>As an example, someone is considered a legal adult if they are 18 years of age, or older.</p>
-<pre><code class="language-java">boolean isAdult = age &gt;= 18;
+<p>You can provide an initial list of values in the declaration by including a comma-separated list inside curly braces { }.</p>
+<pre><code class="language-java">String[] cars = {&quot;Ford&quot;, &quot;Subaru&quot;, &quot;Volkswagen&quot;};
 </code></pre>
-<h2 id="exercise-the-roller-coaster-gate">Exercise: The Roller Coaster Gate</h2>
-<p>Imagine you are building a digital gate for a theme park ride called The Dragon Helper. The ride has height rules to keep everyone safe.</p>
-<p>Your Tasks</p>
-<ul>
-<li>Fill in the correct equations to determine if the rider is tall enough. </li>
-<li>Test the program with these values for height:<ul>
-<li>Try 40, 48, 50, 72 and 73</li>
-</ul>
-</li>
-</ul>
-<p>The program does the following:</p>
-<ul>
-<li>If height is 48 or taller, it prints: "You are tall enough to ride!"</li>
-<li>If height is less than 48, it prints: "Sorry, you are too short for this ride."</li>
-<li>A special bonus check inside prints: "Wow, you are a giant! Sit in the front row." if the rider is exactly 72 inches.</li>
-</ul>
-<p><a href="https://www.online-java.com/3HWv2EtKBE">Try it Now</a></p>
-<pre><code class="language-java">public class Main {
-    public static void main(String[] args) {
-        int height = 50; // Try 40, 48, 72 and 73!
-
-        // replace the values here with the correct conditions
-        // For example `boolean aboveFreezing = temperature &gt; 32; ``
-        boolean tallEnough = false;
-        boolean isGiant = false;
-
-        // You should not need to change anything below this line
-
-        if (tallEnough) {
-            if (isGiant) {
-                System.out.println(&quot;Wow, you are a giant! Sit in the front row.&quot;);
-            } else {
-                System.out.println(&quot;You are tall enough to ride!&quot;);
-            }
-        } else {
-            System.out.println(&quot;Sorry, you are too short for this ride.&quot;);
-        }
-    }
-}
-
+<h2 id="accessing-the-elements-of-an-array">Accessing the elements of an array</h2>
+<p>You can access the elements of an array by referring to the index number.  </p>
+<p>The first index is zero.  </p>
+<pre><code class="language-java">String[] cars = {&quot;Ford&quot;, &quot;Subaru&quot;, &quot;Volkswagen&quot;};
+System.out.println(cars[0]); // Ford
+System.out.println(cars[1]); // Subaru
+System.out.println(cars[2]); // Volkswagen
 </code></pre>
+<h2 id="getting-the-size-of-an-array">Getting the size of an array</h2>
+<p>You can get the size of the array using the <code>length</code> property.</p>
+<pre><code class="language-java">String[] cars = {&quot;Ford&quot;, &quot;Subaru&quot;, &quot;Volkswagen&quot;};
+System.out.println(cars.length); // 3
+</code></pre>
+<h3 id="exercise">Exercise</h3>
+<p>Let's combine our knowledge of arrays with our knowledge of while loops.</p>
+<p>Write a java program that loops through an array and prints the values at each index.</p>
+<p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Exercise</a>
+<a href="https://www.online-java.com/61BicaWCel">Click here to try again</a></p>
 
 
 
