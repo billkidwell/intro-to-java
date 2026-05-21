@@ -43,6 +43,7 @@ Let's combine our knowledge of arrays with our knowledge of while loops.
 Write a java program that loops through an array and prints the values at each index.
 
 [Exercise](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
 [Click here to try again](https://www.online-java.com/61BicaWCel)
 
 
