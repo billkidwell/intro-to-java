@@ -1048,14 +1048,28 @@ switch( dayNumber ) {
     DayOfWeek today = DayOfWeek.Wed;
     String day;
 
-    day = switch (today) {
-        case Mon -&gt; &quot;Monday&quot;;
-        case Tue -&gt; &quot;Tuesday&quot;;
-        case Wed -&gt; &quot;Wednesday&quot;;
-        case Thu -&gt; &quot;Thursday&quot;;
-        case Fri -&gt; &quot;Friday&quot;;
-        case Sat -&gt; &quot;Saturday&quot;;
-        case Sun -&gt; &quot;Sunday&quot;;                
+    switch (today) {
+        case Mon: 
+            day = &quot;Monday&quot;;
+            break;
+        case Tue:
+            day = &quot;Tuesday&quot;;
+            break;
+        case Wed:
+            day = &quot;Wednesday&quot;;
+            break;
+        case Thu:
+            day = &quot;Thursday&quot;;
+            break;
+        case Fri: 
+            day = &quot;Friday&quot;;
+            break;
+        case Sat:
+            day = &quot;Saturday&quot;;
+            break;
+        case Sun:
+            day = &quot;Sunday&quot;;                
+            break
     };
 
     System.out.println(&quot;Day &quot; + day + &quot; is &quot; + day);
@@ -1063,7 +1077,7 @@ switch( dayNumber ) {
 <p>This is useful for a few reasons.  First, <code>today</code> can only be one of the values we have defined for the enum <code>DayOfWeek</code>.  We don't have to worry what a zero or an 8 means, because those values aren't legal.  Our code won't run if we try to set it to something else. In addition, this is a lot easier to read and understand.  </p>
 <h3 id="exercise_1">Exercise</h3>
 <p>Let's practice using enums and switch statements. </p>
-<p>(Day of Week exercise)[https://www.online-java.com/CBL3OdVI6l]</p>
+<p><a href="https://www.online-java.com/CBL3OdVI6l">Day of Week exercise</a></p>
 <p>```java
  public class Main {
     public static void main(String[] args) {</p>
