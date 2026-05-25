@@ -272,14 +272,28 @@ Now we can use these like variables.
     DayOfWeek today = DayOfWeek.Wed;
     String day;
     
-    day = switch (today) {
-        case Mon -> "Monday";
-        case Tue -> "Tuesday";
-        case Wed -> "Wednesday";
-        case Thu -> "Thursday";
-        case Fri -> "Friday";
-        case Sat -> "Saturday";
-        case Sun -> "Sunday";                
+    switch (today) {
+        case Mon: 
+            day = "Monday";
+            break;
+        case Tue:
+            day = "Tuesday";
+            break;
+        case Wed:
+            day = "Wednesday";
+            break;
+        case Thu:
+            day = "Thursday";
+            break;
+        case Fri: 
+            day = "Friday";
+            break;
+        case Sat:
+            day = "Saturday";
+            break;
+        case Sun:
+            day = "Sunday";                
+            break
     };
     
     System.out.println("Day " + day + " is " + day);
@@ -291,7 +305,8 @@ This is useful for a few reasons.  First, `today` can only be one of the values 
  
 Let's practice using enums and switch statements. 
 
- (Day of Week exercise)[https://www.online-java.com/CBL3OdVI6l]
+ [Day of Week exercise](https://www.online-java.com/CBL3OdVI6l)
+
 
  ```java
  public class Main {
