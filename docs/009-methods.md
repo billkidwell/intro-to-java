@@ -85,7 +85,7 @@ Sometimes, we need a method that can take different types of values.  When we us
 
 A simple example would be an `add` method. We don't really need one, since we can just use `+`, but let's write one to see how this works. 
 
-```java linenums=1
+```java
 public class Main {
     static int add(int a, int b) {
         System.out.println("Adding integers!");
