@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../002-math/">
+        <link rel="prev" href="../008-more-loops/">
       
       
-        <link rel="next" href="../004-logical-operators/">
+        <link rel="next" href="../999-future-topics/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Comparison - Introduction to Java</title>
+        <title>Methods in Java - Introduction to Java</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#comparison" class="md-skip">
+        <a href="#methods-in-java" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Comparison
+              Methods in Java
             
           </span>
         </div>
@@ -301,37 +301,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Comparison
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../003-comparison/" class="md-nav__link">
         
   
   
@@ -347,59 +320,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#equal" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Equal ==
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#additional-comparison-operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Additional comparison operators
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercise-the-roller-coaster-gate" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercise: The Roller Coaster Gate
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -543,10 +463,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../009-methods/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methods in Java
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -562,6 +509,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-simple-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A simple method
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passing-values-to-our-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passing values to our method
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#return-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Return values
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-overloading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method overloading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -620,10 +631,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#equal" class="md-nav__link">
+  <a href="#a-simple-method" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Equal ==
+        A simple method
       
     </span>
   </a>
@@ -631,10 +642,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#additional-comparison-operators" class="md-nav__link">
+  <a href="#passing-values-to-our-method" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Additional comparison operators
+        Passing values to our method
       
     </span>
   </a>
@@ -642,10 +653,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercise-the-roller-coaster-gate" class="md-nav__link">
+  <a href="#return-values" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exercise: The Roller Coaster Gate
+        Return values
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-overloading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method overloading
       
     </span>
   </a>
@@ -669,103 +691,151 @@
 
 
 
-<h1 id="comparison">Comparison</h1>
-<p>When you have variables with different values, you often need to compare them to decide what your program should do. </p>
-<p>In this section we talk about comparison operators.  These result in a value of true or false. </p>
-<h2 id="equal">Equal ==</h2>
-<p>One tricky thing to remember is that when comparing two values, you use ==, when assigning a value, you use =;</p>
-<pre><code class="language-java">int x = 5;
-System.out.println(x == 5); // returns true
-</code></pre>
-<h2 id="additional-comparison-operators">Additional comparison operators</h2>
-<p>This table provides more examples of comparison operators that you may need.</p>
-<table>
-<thead>
-<tr>
-<th>operator</th>
-<th>description</th>
-<th>example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>==</td>
-<td>Equal to</td>
-<td>x == 5</td>
-</tr>
-<tr>
-<td>!=</td>
-<td>Not equal</td>
-<td>x != 5</td>
-</tr>
-<tr>
-<td>&gt;</td>
-<td>Greater than</td>
-<td>x &gt; 5</td>
-</tr>
-<tr>
-<td>&lt;</td>
-<td>Less than</td>
-<td>x &lt; 5</td>
-</tr>
-<tr>
-<td>&gt;=</td>
-<td>Greater than or equal to</td>
-<td>x &gt;= 5</td>
-</tr>
-<tr>
-<td>&lt;=</td>
-<td>Less than or equal to</td>
-<td>x &lt;= 5</td>
-</tr>
-</tbody>
-</table>
-<p>We will see later that ! is used for NOT. That should help us remember !=.  I still remember greater than and less than operators based on the fact that the opening is toward the larger number, like the jaws of an alligator gobbling up the larger number. </p>
-<p>&gt;= and &lt;= are shortcuts.  It is very common that you want to know if something is equal to a boundary, or greater than that boundary.  These operators prevent us from typing both conditions. </p>
-<p>As an example, someone is considered a legal adult if they are 18 years of age, or older.</p>
-<pre><code class="language-java">boolean isAdult = age &gt;= 18;
-</code></pre>
-<h2 id="exercise-the-roller-coaster-gate">Exercise: The Roller Coaster Gate</h2>
-<p>Imagine you are building a digital gate for a theme park ride called The Dragon Helper. The ride has height rules to keep everyone safe.</p>
-<p>Your Tasks</p>
-<ul>
-<li>Fill in the correct equations to determine if the rider is tall enough. </li>
-<li>Test the program with these values for height:<ul>
-<li>Try 40, 48, 50, 72 and 73</li>
-</ul>
-</li>
-</ul>
-<p>The program does the following:</p>
-<ul>
-<li>If height is 48 or taller, it prints: "You are tall enough to ride!"</li>
-<li>If height is less than 48, it prints: "Sorry, you are too short for this ride."</li>
-<li>A special bonus check inside prints: "Wow, you are a giant! Sit in the front row." if the rider is exactly 72 inches.</li>
-</ul>
-<p><a href="https://www.online-java.com/3HWv2EtKBE">Try it Now</a></p>
-<pre><code class="language-java">public class Main {
-    public static void main(String[] args) {
-        int height = 50; // Try 40, 48, 72 and 73!
+<h1 id="methods-in-java">Methods in Java</h1>
+<p>Methods, also known as functions, are blocks of code that we can call.  You can also pass information, through parameters, to a method.  </p>
+<p>Methods make it easier to reuse code.  They also make code easier to read. </p>
+<h2 id="a-simple-method">A simple method</h2>
+<p>We have already been working with the <code>main</code> method in Java.  Let's expand that to include our own methods. </p>
+<pre><code class="language-java">
+public class Main {
 
-        // replace the values here with the correct conditions
-        // For example `boolean aboveFreezing = temperature &gt; 32; ``
-        boolean tallEnough = false;
-        boolean isGiant = false;
-
-        // You should not need to change anything below this line
-
-        if (tallEnough) {
-            if (isGiant) {
-                System.out.println(&quot;Wow, you are a giant! Sit in the front row.&quot;);
-            } else {
-                System.out.println(&quot;You are tall enough to ride!&quot;);
-            }
-        } else {
-            System.out.println(&quot;Sorry, you are too short for this ride.&quot;);
-        }
+    static void sayHello() {
+        System.out.println(&quot;Hello!&quot;);
     }
+
+    public static void main(String[] args) {
+        sayHello();
+    }
+
 }
 
 </code></pre>
+<p>As you can see in this example, we create a method called <code>sayHello</code>.  This uses camel casing as the naming convention.  The first letter is lower case.  The first letter of each new word is upper case.  </p>
+<p>We don't provide an access modifier (like <code>public</code> or <code>protected</code>) so it defaults to <code>private</code>.  We wouldn't be able to call this method from another class.  </p>
+<p>This method is <code>static</code> because it is a class method.  You don't have to create an object to call the class.  We will learn more about this when we talk about creating classes and objects. </p>
+<p>The <code>void</code> keyword means that this method does not return any data. </p>
+<p>The empty parentheses mean that we aren't passing any parameters. </p>
+<p>In main, we are calling the <code>sayHello</code> method.  Basically, we can take the block of code inside <code>sayHello</code> and substitute it in <code>main</code>.  </p>
+<h2 id="passing-values-to-our-method">Passing values to our method</h2>
+<p>Now, let's expand our example with parameters.  Let's add a new version of <code>sayHello</code> that accepts a name.  </p>
+<pre><code class="language-java">static void sayHello(String firstName) {
+    System.out.println(&quot;Hello &quot; + firstName + &quot;!&quot;);
+}
+</code></pre>
+<p>Now, we can call this with different values.  <code>firstName</code> is our <em>parameter</em> and the values that we pass in, e.g. "Xander" and "Trent" are <em>arguments</em>.</p>
+<pre><code class="language-java">public static void main(String[] args) {
+    sayHello(&quot;Xander&quot;);
+    sayHello(&quot;Trent&quot;);
+}
+</code></pre>
+<h2 id="return-values">Return values</h2>
+<p>What if we want our method to return a value?  Let's write a method that returns the remainder.  The modulus operator (<code>%</code>) does this, but it can be easy to forget. </p>
+<p>Recall that when we divide two numbers, the first number is called the <em>dividend</em> and the second is the <em>divisor</em>;</p>
+<pre><code class="language-java">static int getRemainder(int dividend, int divisor) {
+    return dividend % divisor;
+}
+</code></pre>
+<p>We see that we no longer have <code>void</code> as a return type, and we replaced it with <code>int</code>.  We expect this method to return an <code>int</code> value. </p>
+<p>You can also see that we declare two parameters for our function.  Each of them is an <code>int</code>.  We separate them with a <code>,</code>.</p>
+<p>To call this, we could do the following:</p>
+<pre><code class="language-java">int remainder = getRemainder(5, 2);
+</code></pre>
+<p>After this call, <code>remainder</code> is equal to <code>1</code>.</p>
+<h2 id="method-overloading">Method overloading</h2>
+<p>Sometimes, we need a method that can take different types of values.  When we use the same name, but different parameters, we call this <strong>method overloading</strong>.  </p>
+<p>A simple example would be an <code>add</code> method. We don't really need one, since we can just use <code>+</code>, but let's write one to see how this works. </p>
+<p>```java linenums=1
+public class Main {
+    static int add(int a, int b) {
+        System.out.println("Adding integers!");
+        return a + b;
+    }</p>
+<pre><code>static double add(double a, double b) {
+    System.out.println("Adding doubles!");
+    return a + b;
+}
+
+public static void main(String[] args) {
+    int intAnswer = add(5, 3);
+    System.out.println("Answer is " + intAnswer);
+
+    double doubleAnswer = add(5.1, 3.1);
+    System.out.println("Answer is " + doubleAnswer);
+}
+</code></pre>
+<p>}</p>
+<pre><code>
+When you run this code, you get the following output:
+
+</code></pre>
+<p>Adding integers!
+Answer is 8
+Adding doubles!
+Answer is 8.2</p>
+<pre><code>
+[Try it here](https://www.online-java.com/V31SiZ0bOr)
+
+Can you trace the code and see why it prints that output?
+
+### Let's put this into practice.  
+
+```java
+public class Main {
+
+    String[] months = {
+        &quot;January&quot;, 
+        &quot;February&quot;, 
+        &quot;March&quot;, 
+        &quot;April&quot;, 
+        &quot;May&quot;,
+        &quot;June&quot;, 
+        &quot;July&quot;, 
+        &quot;August&quot;,
+        &quot;September&quot;, 
+        &quot;October&quot;, 
+        &quot;November&quot;,
+        &quot;December&quot;
+    };
+
+    /**
+     * Take a number from 1-12 and return the month name.  Use the months array. 
+     * 
+     * HINT: indexes start at zero.  Try subtracting 1
+     */
+    static String getMonthName(int monthNumber) {
+        // Change this to return the month name from the array.
+        return &quot;&quot;;
+    }
+
+    /**
+     * This function should return &quot;Winter&quot; for December, January, or February.
+     * It should return &quot;Spring&quot; for March, April or May.
+     * It should return &quot;Summer&quot; for June, July, or August.
+     * It should return &quot;Fall&quot; for September, October or November.
+     */
+    static String getSeasonName(int monthNumber) {
+        String season = &quot;Unknown&quot;;
+
+        // Add your code here to turn the number into the 
+        // appropriate string.  You can use a switch statement, or an if-else
+
+        return season;
+    }
+
+
+    public static void main(String[] args) {
+
+        int month = 2; 
+        String monthName = getMonthName(2);
+        System.out.println(&quot;Month Number: &quot; + month);
+        System.out.println(&quot;Month name: &quot; + monthName);
+
+        String seasonName = getSeasonName(month);
+        System.out.println(&quot;Season: &quot; + seasonName);
+    }
+}
+</code></pre>
+<p><a href="https://www.online-java.com/FHUiQ6H2Uu">Month methods</a></p>
 
 
 
