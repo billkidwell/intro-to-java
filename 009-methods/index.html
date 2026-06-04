@@ -567,6 +567,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Method overloading">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lets-put-this-into-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Let's put this into practice.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -672,6 +689,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Method overloading">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lets-put-this-into-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Let's put this into practice.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -744,43 +778,36 @@ public class Main {
 <h2 id="method-overloading">Method overloading</h2>
 <p>Sometimes, we need a method that can take different types of values.  When we use the same name, but different parameters, we call this <strong>method overloading</strong>.  </p>
 <p>A simple example would be an <code>add</code> method. We don't really need one, since we can just use <code>+</code>, but let's write one to see how this works. </p>
-<p>```java linenums=1
-public class Main {
+<pre><code class="language-java">public class Main {
     static int add(int a, int b) {
-        System.out.println("Adding integers!");
+        System.out.println(&quot;Adding integers!&quot;);
         return a + b;
-    }</p>
-<pre><code>static double add(double a, double b) {
-    System.out.println("Adding doubles!");
-    return a + b;
-}
+    }
 
-public static void main(String[] args) {
-    int intAnswer = add(5, 3);
-    System.out.println("Answer is " + intAnswer);
+    static double add(double a, double b) {
+        System.out.println(&quot;Adding doubles!&quot;);
+        return a + b;
+    }
 
-    double doubleAnswer = add(5.1, 3.1);
-    System.out.println("Answer is " + doubleAnswer);
+    public static void main(String[] args) {
+        int intAnswer = add(5, 3);
+        System.out.println(&quot;Answer is &quot; + intAnswer);
+
+        double doubleAnswer = add(5.1, 3.1);
+        System.out.println(&quot;Answer is &quot; + doubleAnswer);
+    }
 }
 </code></pre>
-<p>}</p>
-<pre><code>
-When you run this code, you get the following output:
-
-</code></pre>
-<p>Adding integers!
+<p>When you run this code, you get the following output:</p>
+<pre><code>Adding integers!
 Answer is 8
 Adding doubles!
-Answer is 8.2</p>
-<pre><code>
-[Try it here](https://www.online-java.com/V31SiZ0bOr)
-
-Can you trace the code and see why it prints that output?
-
-### Let's put this into practice.  
-
-```java
-public class Main {
+Answer is 8.2
+</code></pre>
+<p><a href="https://www.online-java.com/V31SiZ0bOr">Try it here</a></p>
+<p>Can you trace the code and see why it prints that output?</p>
+<h3 id="lets-put-this-into-practice">Let's put this into practice.</h3>
+<pre><code class="language-java">public class Main {
 
     String[] months = {
         &quot;January&quot;, 
