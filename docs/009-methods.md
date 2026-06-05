@@ -125,7 +125,7 @@ Can you trace the code and see why it prints that output?
 ```java
 public class Main {
     
-    String[] months = {
+    static String[] months = {
         "January", 
         "February", 
         "March", 
@@ -169,7 +169,7 @@ public class Main {
     public static void main(String[] args) {
         
         int month = 2; 
-        String monthName = getMonthName(2);
+        String monthName = getMonthName(month);
         System.out.println("Month Number: " + month);
         System.out.println("Month name: " + monthName);
         
@@ -179,5 +179,7 @@ public class Main {
 }
 ```
 
-[Month methods](https://www.online-java.com/FHUiQ6H2Uu)
+[Month methods](https://www.online-java.com/JczLtNLdDB)
+
+For bonus points, change the main method so that it loops from 1-12 and prints the names and seasons for all of the months.
 
