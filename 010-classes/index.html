@@ -21,7 +21,7 @@
     
     
       
-        <title>999 future topics - Introduction to Java</title>
+        <title>Classes - Introduction to Java</title>
       
     
     
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#classes" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -93,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              999 future topics
+              Classes
             
           </span>
         </div>
@@ -492,6 +497,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Classes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -500,7 +525,7 @@
   <span class="md-ellipsis">
     
   
-    999 future topics
+    Classes
   
 
     
@@ -509,6 +534,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Objects
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tostring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        toString()
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-add-age" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise: Add Age
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -531,6 +608,49 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Objects
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tostring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        toString()
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-add-age" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise: Add Age
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -547,13 +667,100 @@
 
 
 
-  <h1>999 future topics</h1>
+<h1 id="classes">Classes</h1>
+<p>Java is an object-oriented programming language.  Java is about creating objects with data and methods. </p>
+<p>But what is a class?</p>
+<p>Think of class as in "classification".  We define a class, for example, <code>Car</code>.  When we create objects of type <code>Car</code>, they get their own identities, and include details like specific models 'Subaru', 'Ford', 'Volkswagen".  Or a class <code>Fruit</code> might result in 'Apple', 'Banana', and 'Pear'.  Just like a class <code>Student</code> might have objects 'Xander' and 'Trent'</p>
+<blockquote>
+<p>A class is like a blueprint for the object we want to create.</p>
+</blockquote>
+<p>A class can have data called <strong>attributes</strong>.  These are just variables that belong to the class.</p>
+<p>This example class has a name attribute of type String.</p>
+<pre><code class="language-java">public class Student {
+    String name;
+}
+</code></pre>
+<p>Since we don't specify, the variable name is <code>private</code>.  That means that I can't access it outside of the class <code>Student</code>.  </p>
+<p>We generally like to add "getters" and "setters" to control access.</p>
+<pre><code class="language-java">public class Student {
+    String name;
 
-<p>Topics to be covered</p>
-<ul>
-<li>final and Constants</li>
-<li>Boolean Logic</li>
-</ul>
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+</code></pre>
+<blockquote>
+<p>Notice how we use <code>this.name</code> to differentiate the <code>name</code> that belongs to the class from the <code>name</code> that is an argument.</p>
+</blockquote>
+<h2 id="creating-objects">Creating Objects</h2>
+<p>Now that we have created a class, let's use it to create some objects.</p>
+<pre><code class="language-java">public class Main {
+
+    public static void main(String[] args) {
+
+        // Create a new object - xander
+        Student xander = new Student();
+        xander.setName(&quot;Xander&quot;);
+
+        Student trent = new Student();
+        trent.setName(&quot;Trent&quot;);
+
+    }
+}
+</code></pre>
+<p>Now we have some <code>Student</code> objects (also called instances).  Notice how we use the <code>new</code> operator to create them. </p>
+<p>We can improve our class by giving it a custom <code>constructor</code>.  Constructors are a special kind of method that are used during creation. </p>
+<p>What if we provided the name of the <code>Student</code> object when we created it?</p>
+<p>This constructor is public.  It needs to be in order to be called outside of our class.  Notice that there is no return type, and the name of the constructor is the class name.  </p>
+<p>We define one argument, <code>name</code>, which we will use to set the name of the Student during creation.</p>
+<pre><code class="language-java">    public Student(String name) {
+        this.setName(name);
+    }
+
+</code></pre>
+<p>Now, our previous example looks like this:</p>
+<pre><code class="language-java">        Student xander = new Student(&quot;Xander&quot;);
+        Student trent = new Student(&quot;Trent&quot;);
+</code></pre>
+<p>Very nice!</p>
+<h2 id="tostring">toString()</h2>
+<p>How do we get a String representation of our object?</p>
+<p>Objects have a built-in method called toString().  If we print an object, it calls this method.</p>
+<pre><code class="language-java">        System.out.println(xander);
+        System.out.println(trent);
+</code></pre>
+<p>This prints something like this:</p>
+<pre><code>Student@76ed5528
+Student@2c7b84de
+</code></pre>
+<p>That's not super helpful.  It is telling us that those are objects of class <code>Student</code> at those addresses in memory.  However, we can make our own <code>toString</code> method!</p>
+<pre><code>    public String toString() {
+        return &quot;Student: &quot; + name;
+    }
+</code></pre>
+<p>Now when we call the code above, we get this:</p>
+<pre><code>Student: Xander
+Student: Trent
+</code></pre>
+<h2 id="exercise-add-age">Exercise: Add Age</h2>
+<p>Let's take this Student example, and add the following</p>
+<p>1) Add a new attribute, age, that takes an integer
+2) Add a new setter and getter for age
+3) Update our toString feature to output the age, like this:</p>
+<pre><code>`Student: Xander, Age: 12`
+</code></pre>
+<p>4) Update main to set the student's ages</p>
+<pre><code>```
+xander.setAge(12);
+trent.setAge(10);
+```
+</code></pre>
+<p><a href="https://www.online-java.com/1FIxm8Q2nt">Exercise</a></p>
 
 
 
