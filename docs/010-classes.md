@@ -122,10 +122,13 @@ Student: Trent
 Let's take this Student example, and add the following
 
 1) Add a new attribute, age, that takes an integer
+
 2) Add a new setter and getter for age
+
 3) Update our toString feature to output the age, like this:
 
     `Student: Xander, Age: 12`
+    
 4) Update main to set the student's ages
 
     ```
